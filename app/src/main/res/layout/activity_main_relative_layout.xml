@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtLayoutHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:text="Android Development with Internshala"
+        android:textColor="#0d47a1"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtLayoutSubHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="#d50000"
+        android:text="Android is fun"
+        android:textStyle="italic"
+        android:layout_below="@id/txtLayoutHeader"/>
+    <ImageView
+        android:id="@+id/imgTonyStark"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/tony_stark"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Click Here"
+        android:background="#ff5722"
+        android:textColor="#fdd835"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"/>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:layout_below="@id/txtLayoutSubHeader"/>
+</RelativeLayout>
